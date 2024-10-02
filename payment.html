@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center">Choose Your Payment Method</h2>
+
+        <!-- Credit/Debit Card -->
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <img src="https://example.com/credit-card-icon.png" alt="Credit Card Icon" class="w-6 h-6 mr-2" />
+                <span>Credit/Debit Card</span>
+            </label>
+            <input type="text" placeholder="Card Number" class="w-full p-2 bg-gray-700 rounded" required />
+            <div class="flex justify-between">
+                <input type="text" placeholder="MM/YY" class="w-1/2 p-2 bg-gray-700 rounded mt-2" required />
+                <input type="text" placeholder="CVV" class="w-1/3 p-2 bg-gray-700 rounded mt-2" required />
+            </div>
+        </div>
+
+        <!-- UPI Payments -->  
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <img src="https://example.com/upi-icon.png" alt="UPI Icon" class="w-6 h-6 mr-2" />
+                <span>UPI Payments</span>
+            </label>
+            <input type="text" placeholder="UPI ID" class="w-full p-2 bg-gray-700 rounded" required />
+        </div>
+
+        <!-- Net Banking -->
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <span>Net Banking</span>
+            </label>
+            <select class="w-full p-2 bg-gray-700 rounded">
+                <option>Select Your Bank</option>
+                <option>Bank A</option>
+                <option>Bank B</option>
+                <option>Bank C</option>
+            </select>
+            <input type="text" placeholder="Account Number" class="w-full p-2 bg-gray-700 rounded mt-2" />
+        </div>
+
+        <!-- Wallets -->
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <span>Wallets</span>
+            </label>
+            <select class="w-full p-2 bg-gray-700 rounded">
+                <option>Choose Wallet</option>
+                <option>Paytm</option>
+                <option>Google Pay</option>
+                <option>PhonePe</option>
+            </select>
+        </div>
+
+        <!-- Cash on Delivery -->
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <span>Cash on Delivery</span>
+            </label>
+            <input type="text" placeholder="Shipping Address" class="w-full p-2 bg-gray-700 rounded" required />
+        </div>
+
+        <!-- PayPal -->
+        <div class="mb-4">
+            <label class="flex items-center mb-2">
+                <span>PayPal</span>
+            </label>
+            <input type="text" placeholder="PayPal ID" class="w-full p-2 bg-gray-700 rounded" required />
+        </div>
+
+        <div class="flex justify-between items-center mt-6">
+            <span class="text-lg font-bold">Total Amount: ₹ [______]</span>
+            <button class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded hover:bg-yellow-400">Pay Now 💸</button>
+        </div>
+    </div>
+</body>
+</html>
